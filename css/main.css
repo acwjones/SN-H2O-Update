@@ -114,7 +114,7 @@ section {
 
 
 .content {
-    width: 990px;
+    max-width: 990px;
     background: #444;
     margin: 0px auto;
     padding: 30px;
@@ -163,8 +163,6 @@ hr {
     display: block;
     position: relative;
     float: left;
-    width: 250px;
-    height: 156x;
 }
 
 .video_container {

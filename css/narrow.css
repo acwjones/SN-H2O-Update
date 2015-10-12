@@ -98,7 +98,8 @@ body, html {
 	background-color: #000000;
 }
 body {
-	font-family: 'Open Sans', sans-serif;#
+	font-family: 'Open Sans', sans-serif;
+    color: #fff;
 }
 .no-js {
 	padding-top: 106px;
@@ -126,9 +127,38 @@ main {
 	overflow-x: hidden;
 }
 
-h3 {
-    font-size: 30px;
+.content {
+    width: 98%;
+    background: #444;
+    margin: 0px auto;
+    padding: 12px;
+}
 
+h2 {
+    margin:20px auto 40px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #74C3BD;
+    text-align: center;
+    margin: 20px auto 40px auto;
+}
+
+h3 {
+    color: #74C3BD;
+
+}
+
+p {
+    position: relative;
+    float: left;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+    background-image: linear-gradient(to right, #444, #ccc, #444);
+    margin: 40px auto;
 }
 
 .video_container {
@@ -198,6 +228,17 @@ video#bgvid {
     display: block;
     width: auto;
     height: auto;
+}
+
+.homeSlide {
+    background: #000;
+    background-image: url('../img/placeholder.jpg');
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 
