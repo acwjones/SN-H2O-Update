@@ -1,6 +1,14 @@
 $(document).ready(function(){
 
 	// Ready For Action.
+
+	$('.carousel').slick({
+		autoplay:true,
+		dots:true,
+		infinite:false,
+		fade: true,
+  		cssEase: 'linear'
+	});
 	
 });
 

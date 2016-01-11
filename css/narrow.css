@@ -127,37 +127,62 @@ main {
 	overflow-x: hidden;
 }
 
+.container {
+    padding: 3px;
+}
+
+
 .content {
-    width: 98%;
-    background: #444;
     margin: 0px auto;
-    padding: 12px;
+    padding: 30px;   
+}
+
+.content .row {
+    margin-bottom: 50px;
 }
 
 h2 {
+    font-family: 'Orbitron', sans-serif;
     margin:20px auto 40px auto;
     text-transform: uppercase;
     font-weight: bold;
-    color: #74C3BD;
+    color: #fff;
     text-align: center;
     margin: 20px auto 40px auto;
 }
 
 h3 {
-    color: #74C3BD;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    margin: 30px auto 10px auto;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+h4 {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    margin: 30px auto 10px auto;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 500;
 
 }
 
 p {
     position: relative;
     float: left;
+    width:100%;
+    font-size: 1.1em;
 }
+
 
 hr {
     border: 0;
-    height: 1px;
-    background: #444;
-    background-image: linear-gradient(to right, #444, #ccc, #444);
+    height: 4px;
+    background: #FFF;
     margin: 40px auto;
 }
 
@@ -210,11 +235,27 @@ video#bgvid {
 }
 
 .thumbs {
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.6);
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.6);
-    margin:20px auto;
-    max-width: 60% !important;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+    float: left;
+}
+
+.carousel {
+    margin: 10px;
+}
+
+.carousel-link {
+    margin:10px;
+}
+
+
+.center-div {
+    text-align: center;
+}
+
+.center-obj {
+    display: inline-block;
 }
 
 .log {
@@ -231,8 +272,7 @@ video#bgvid {
 }
 
 .homeSlide {
-    background: #000;
-    background-image: url('../img/placeholder.jpg');
+    background: #000;;
     text-align: center;
     background-position: center center;
     background-repeat: no-repeat;
@@ -240,27 +280,83 @@ video#bgvid {
     height: 100%;
     width: 100%;
 }
+
+#top-section {
+    position: relative;
+    background-image: url('../img/header_bg.jpg');
+}
+
+.sea-surface {
+    position: absolute;
+    width: 100%;
+    height:190px;
+    bottom:0px;
+    left:0px;
+    background-image:url('../img/surface.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.background {
+    background: #3f90e0; /* Old browsers */
+    background: -moz-linear-gradient(top,  #3f90e0 0%, #2471c8 50%, #007b91 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #3f90e0 0%,#2471c8 50%,#007b91 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #3f90e0 0%,#2471c8 50%,#007b91 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f90e0', endColorstr='#007b91',GradientType=0 ); /* IE6-9 */
+}
+
+.background2 {
+    background: url('../img/water_texture.png') center repeat-y;
+    background-size: 100% auto;
+}
+
+.trailer {
+    position: relative;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+}
+
+.icon-subtitle {
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.icon-subtitle img {
+    float: left;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.icon-subtitle h3 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: auto;
+    height: 64px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
 
 
 
 /* Slide 10 AKA FINAL SECTION */
 
-#slide-10 .bcg {
-    background: #000;
-    background-image:url('../img/subnautica_emperor_1.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+#final {
+    background-image:url('../img/footer_bg.jpg');;
     text-align: center;
 }
 
-#slide-10 h2 {
+#final h2 {
     color:#fff;
 }
 
-#slide-10 p {
+#final p {
+    float: inherit;
+    margin: auto;
     margin-bottom:30px;
     width: auto !important;
     max-width: 600px;
@@ -348,8 +444,8 @@ video#bgvid {
     }
 
     .img-grid {
-        position: absolute;
-        width:20%;
+        margin: 5px;
+    } width:20%;
     }
     .img-grid h3 {
         color:#484848;
@@ -367,6 +463,12 @@ video#bgvid {
         max-width: 100%;
         height: auto;
     }
+
+    .carousel .img-responsive {
+        width: 100%;
+        height: auto;
+    }
+
 
     .vid-responsive {
         display: block;

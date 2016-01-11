@@ -12,6 +12,7 @@
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900' rel='stylesheet' type='text/css'>
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -19,8 +20,11 @@
         <link rel="stylesheet" href="css/swagger.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/lightbox.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
         <link rel="stylesheet" href="css/main.css" media="(min-width: 768px)">
         <link rel="stylesheet" href="css/narrow.css" media="(max-width: 767px)">
+
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
        
@@ -84,60 +88,183 @@
         <main>
             
             <section id="top-section" class="homeSlide">
-                <h1>H2.0 UPDATE</h1>
+                <div class="hsContainer">
+                    <div class="hsContent">
+
+                        <img class="landing-content-img img-responsive" src="img/logos/subnautica_logo_small.png" /><br />
+                        <img class="landing-content-img img-responsive" src="img/logos/title.png" />
+                        <h2>An evolution in how you see and interact with the world of Subnautica.</h2>
+
+
+                        <div class="sea-surface bcg-width"></div>  
+                    </div>
+                </div> 
             </section>
 
+            <div class="background">
+            <div class="background2">
+                <div class="background-fish no-mobile" id="peeper">
+                    <img src="img/background/peeper_background.png" />
+                </div>
+
+                <div class="background-fish no-mobile" id="boomerang">
+                    <img src="img/background/boomerang_background.png" />
+                </div>
+
+                <div class="background-fish no-mobile" id="gasopod">
+                    <img src="img/background/gasopod_background.png" />
+                </div>
             <div class="container">
             <div class="content">
 
                 <section id="rendering">
-                    <h2>Rendering System Updated</h2>
+                    <h2>The New-Look Subnautica</h2>
                     
                     <div class="row">
-                        <div class="col-md-6">
-                            <h3>Improved Water Rendering</h3>
-                            <p>More fluidity, better reflection/refraction, and substantially wetter water.</p>
+                        <div class="col-md-12">
+                            <div class="embed-responsive embed-responsive-16by9 youtube trailer">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3Y88Z8KkMfI"></iframe>
+                            </div>  
                         </div>
-                        <div class="col-md-6">
-                            <a href="img/placeholder.jpg" data-lightbox="rendering"><img class="thumbnail img-responsive" src="img/placeholder_t.jpg"></a>
+                    </div>
+
+                    <div class="row">                        
+                        <div class="col-md-5 col-sm-12">
+                            <div class="icon-subtitle">
+                                <img src="img/icons/water.png" />
+                                <h3>Water That Feels Wet</h3>
+                            </div>
+
+                            <p>Water on the surface of the ocean now forms foamy waves which interact with the environment and look fantastic whether viewed from above or below the waterline. Looking up from the depths, light is properly refracted to create shimmering vistas of the sky above.</p>
                         </div>
+
+                        <div class="clearfix visible-xs-block"></div>
+
+                        <div class="col-md-7 col-sm-12 center-div">
+                            <div class="carousel">
+                                <div><a class="center-obj carousel-link" href="img/screenshots/rendering_01.jpg" data-lightbox="rendering"><img class="thumbs img-responsive" src="img/screenshots/rendering_01.jpg"></a></div>
+                                <div><a class="center-obj carousel-link" href="img/screenshots/rendering_02.jpg" data-lightbox="rendering"><img class="thumbs img-responsive" src="img/screenshots/rendering_02.jpg"></a></div>
+                                <div><a class="center-obj carousel-link" href="img/screenshots/rendering_03.jpg" data-lightbox="rendering"><img class="thumbs img-responsive" src="img/screenshots/rendering_03.jpg"></a></div>
+                                <div><a class="center-obj carousel-link" href="img/screenshots/rendering_04.jpg" data-lightbox="rendering"><img class="thumbs img-responsive" src="img/screenshots/rendering_04.jpg"></a></div>
+                                <div><a class="center-obj carousel-link" href="img/screenshots/rendering_05.jpg" data-lightbox="rendering"><img class="thumbs img-responsive" src="img/screenshots/rendering_05.jpg"></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-7 col-sm-12 center-div">
+                            <div class="carousel">
+                                <div><a class="center-obj carousel-link" href="img/screenshots/depth_01.jpg" data-lightbox="darkness"><img class="thumbs img-responsive" src="img/screenshots/depth_01.jpg"></a></div>
+                                <div><a class="center-obj carousel-link" href="img/screenshots/depth_02.jpg" data-lightbox="darkness"><img class="thumbs img-responsive" src="img/screenshots/depth_02.jpg"></a></div>
+                                <div><a class="center-obj carousel-link" href="img/screenshots/depth_03.jpg" data-lightbox="darkness"><img class="thumbs img-responsive" src="img/screenshots/depth_03.jpg"></a></div>
+
+                            </div>
+                        </div>
+
+                        <div class="clearfix visible-xs-block"></div>
+
+                        <div class="col-md-5 col-sm-12">
+
+                            <div class="icon-subtitle">
+                                <img src="img/icons/depth.png" />
+                                <h3>Depth & Total Darkness</h3>
+                            </div>
+
+                            <p>Daylight and artificial light sources are now affected realistically by depth and surrounding geology. Caves will often be in total darkness, illuminated only by thin shafts of light. Moving into deeper biomes will change the mood substantially - you'll have to rely on natural bioluminescence and your own jerry-rigged sources of light to chart Subnautica's true depths.</p>
+                        </div>
+                        
+                        <div class="clearfix visible-xs-block"></div>
+                        
                     </div>
                     
 
                     <div class="row">
-                        <div class="col-md-6">
-                            <h3>Improved Sky Rendering & Eclipses</h3>
-                            <p>A more detailed and dynamic skyscape - watch out for unexpected astronomical events.</p>
+
+                        <div class="col-md-5 col-sm-12">
+
+                            <div class="icon-subtitle">
+                                <img src="img/icons/daynight.png" />
+                                <h3>Epic Skyscapes</h3>
+                            </div>
+
+                            <p>The orbits of Subnautica's twin moons, as well as the planet's orbit around the sun, can now be observed in real-time from the surface of the planet. Find the perfect spot to watch a spectacular sunrise or sunset, and keep one eye open for unexpected astronomical events as alien as the world beneath.</p>
                         </div>
-                        <div class="col-md-6">
-                            <a href="img/placeholder.jpg" data-lightbox="rendering"><img class="thumbnail img-responsive" src="img/placeholder_t.jpg"></a>
+
+                        <div class="clearfix visible-xs-block"></div>
+
+                        <div class="col-md-7 col-sm-12 center-div">
+                            <div class="carousel">
+                                <div><a class="center-obj carousel-link" href="img/screenshots/sky_01.jpg" data-lightbox="sky"><img class="thumbs img-responsive" src="img/screenshots/sky_01.jpg"></a></div>
+                                <div><a class="center-obj carousel-link" href="img/screenshots/sky_02.jpg" data-lightbox="sky"><img class="thumbs img-responsive" src="img/screenshots/sky_02.jpg"></a></div>
+                                <div><a class="center-obj carousel-link" href="img/screenshots/sky_03.jpg" data-lightbox="sky"><img class="thumbs img-responsive" src="img/screenshots/sky_03.jpg"></a></div>
+                            </div>                            
                         </div>
+                        
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3>Improved Depth Rendering & Total Darkness</h3>
-                            <p>Light will become a key resource as you dive further into the abyss.</p>
+                </section>
+
+                <hr />
+
+                <section id="scanner"  class="clearfix">
+                    <h2>The Handheld Scanner</h2>
+
+
+                    <div class="row">         
+
+                        <div class="col-md-7 center-div">
+                            <img class="img-responsive" src="img/scanner.png"></a>   
                         </div>
-                        <div class="col-md-6">
-                            <a href="img/placeholder.jpg" data-lightbox="rendering"><img class="thumbnail img-responsive" src="img/placeholder_t.jpg"></a>
+
+                        <div class="clearfix visible-xs-block"></div>      
+
+                        <div class="col-md-5">
+
+                            <div class="icon-subtitle">
+                                <img src="img/icons/lens.png" />
+                                <h3>Overview</h3>
+                            </div>
+
+                            <p>Long-term survival demands survivors understand how to harness their environment. To this end all lifepod fabricators now come as standard with the handheld scanner blueprint.</p>
+
+                            <p><h4>Scanner in Detail:</h4> The scanner is a miniaturized spectroscope. It emits electromagnetic radiation in the specified direction, which bounces off or is absorbed by objects in view, and then analyzes the results to determine the physical and chemical make-up of those objects.</p>
+
+                            <p><h4>Fragment Analysis:</h4> The scanner can record the physical parameters of salvaged technology fragments, allowing the user to synthesize new blueprints for later fabrication. </p>
+                            <p><h4>Organism Analysis:</h4> Scanning living or dead organisms will attempt to match them against the existing database. If no match is found then biological data will be recorded to the PDA data bank for later analysis.</p>
+
                         </div>
+
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3>Improved Hatch Transition Rendering</h3>
-                            <p>Moving through hatches and ladder sections is now more cinematic.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="img/placeholder.jpg" data-lightbox="rendering"><img class="thumbnail img-responsive" src="img/placeholder_t.jpg"></a>
-                        </div>
-                    </div>
+                </section>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3>Audio Options Added</h3>
-                            <p>You can now independently adjust sound and music volume from the settings menu.</p>
+                <hr />
+
+                <section id="encyclopedia">
+                    <h2>The PDA Data Bank</h2>
+                    
+                    <div class="row">                        
+                        <div class="col-md-5">
+
+                            <div class="icon-subtitle">
+                                <img src="img/icons/pda.png" />
+                                <h3>Science is Here</h3>
+                            </div>
+
+                            <p>The PDA emergency program has been updated to add cross-compatibility with the handheld scanner. The new data bank tab stores a growing library of all the information you will need to survive on an alien planet.</p>
+
+                            <p>Scanning alien flora and fauna will record basic biological information. The PDA's onboard AI will also synthesize reasonable hypotheses regarding organisms' behavioural tendencies and evolutionary origins, as well as deliver assessments on how best to handle them.</p>
+
+                            <p>Please note that this function is still in alpha stage, and may not be compatible with all technologies and alien lifeforms. This will be addressed in a future software update.</p>
+
+                        </div>
+
+                        <div class="col-md-7 col-sm-12 center-div">
+                            <div class="carousel">
+                                <div><a class="center-obj carousel-link" href="img/screenshots/pda_01.jpg" data-lightbox="pda"><img class="thumbs img-responsive" src="img/screenshots/pda_01.jpg"></a></div>
+                                <div><a class="center-obj carousel-link" href="img/screenshots/pda_02.jpg" data-lightbox="pda"><img class="thumbs img-responsive" src="img/screenshots/pda_02.jpg"></a></div>
+                                <div><a class="center-obj carousel-link" href="img/screenshots/pda_03.jpg" data-lightbox="pda"><img class="thumbs img-responsive" src="img/screenshots/pda_03.jpg"></a></div>
+                            </div>                            
                         </div>
                     </div>
 
@@ -145,49 +272,158 @@
 
                 <hr />
 
-                <section id="new-pda-functions">
-                    <h2>New PDA Functions Available</h2>
+                <section id="loot">
+                    <h2>New-Look Materials</h2>
+                    
+                    <div class="row"> 
+                         <div class="col-md-7 col-sm-12 center-div">
+                            <div class="carousel">
+                                <div><a class="center-obj carousel-link" href="img/loot/advanced_wiring_kit.jpg" data-lightbox="loot"><img class="thumbs img-responsive" src="img/loot/advanced_wiring_kit.jpg"></a></div>
+                                <div><a class="center-obj carousel-link" href="img/loot/bleach.jpg" data-lightbox="loot"><img class="thumbs img-responsive" src="img/loot/bleach.jpg"></a></div>
+                                <div><a class="center-obj carousel-link" href="img/loot/computer_chip.jpg" data-lightbox="loot"><img class="thumbs img-responsive" src="img/loot/computer_chip.jpg"></a></div>
+                                <div><a class="center-obj carousel-link" href="img/loot/plasteel.jpg" data-lightbox="loot"><img class="thumbs img-responsive" src="img/loot/plasteel.jpg"></a></div>
+                            </div>                            
+                        </div>
 
-                    <h3>Datacam</h3>
-                    <p>Long-term survival beyond the bare necessities demands the survivor come to understand their environment. To facilitate this the Survival PDA now comes equipped with an onboard data capture feature. In addition to capturing standard optical information and generating images, the datacam also records actual physical information about the target for later study.</p>
+                        <div class="col-md-5">
 
-                    <p><h4>Datacam in Detail:</h4> The datacam lens is actually a miniaturized spectroscope. It emits electromagnetic radiation in the specified direction, which bounces off or is absorbed by objects in the viewframe, and then analyses the results to determine the physical and chemical makeup of those objects.</p>
+                            <div class="icon-subtitle">
+                                <img src="img/icons/drop.png" />
+                                <h3>The Fabricator Has Been Upgraded</h3>
+                            </div>
 
-                    <p><h4>Datacam Usage:</h4> Datacam is currently in alpha testing stage. The optical camera is fully functional, but spectroscopic functionality will be improved substantially in future patches. For now it is best employed as a way to document your exploration and discoveries.</p>
+                            <p>While fabricating materials in uniform cubes has had its cost benefits, it has also led to dangerous misunderstandings owing to the superficial similarity between a cube of water, and a cube of bleach.</p>
 
-                    <h3>Data Bank </h3>
-                    <p>Your PDA is constantly analysing user biometrics and the immediate environment to deliver timely survival advice. Detailed reports on particular subjects can now be accessed from the Data Bank tab. This is also where you will find datacam spectroscope results, and any other kinds of data recorded in the field.</p>
+                            <p>For that reason basic materials printed at the fabricator will now more closely resemble their everyday forms. Bleach will be printed in a bottle with appropriate hazard warnings; wiring kits will arrive in conveniently deployable cases. More than 10 different materials have already been converted, and more are being worked on.</p>
 
-                    <h3>Gallery</h3>
-                    <p>Optical photographs generated by the datacam can be stored, viewed and edited from the new Gallery tab on the PDA menu.</p>
-
-                    <h3>Message Log</h3>
-                    <p>While the PDA will continue to operate in voice mode to deliver crucial information to the user, it will now also record these messages in the Message Log tab for future reference. It will also use the onboard microphone to transpose information from other sources.</p>
-
-                    <h3>Subtitles & Language Support</h3>
-                    <p>For users having difficulty understanding the PDA in voice mode subtitles are now available. They are displayed on the HUD, and multi-language support is constantly being improved.</p>
+                        </div>
+                    </div>
 
                 </section>
 
                 <hr />
 
-                <section id="lifeforms">
-                    <h2>New Lifeforms Detected</h2>
-                    <h3>Shocker</h3>
-                    <h3>SeaTrader</h3>
-                    <h3>Biter and other blood variants</h3>
-                    <h3>Extended cooking recipes?</h3>
-                    <h3>Fish flinching</h3>
+                <section id="new-pda-functions"  class="clearfix">
+                    <h2>PDA Functions Updated</h2>
+
+
+                    <div class="row">         
+
+                        <div class="col-md-6 col-xs-12">
+                            <h3>Message Log</h3>
+                            <p>The PDA will now deliver more accurate and timely survival advice during your first few hours, and it will now also record these messages in the voice lg tab for future reference. It will also use the onboard microphone to transpose communications from other sources.</p>
+                        </div>
+
+                        <div class="clearfix visible-xs-block"></div>      
+                                 
+                        <div class="col-md-6 col-xs-12">
+                            <h3>Subtitles &amp; Language Support</h3>
+                            <p>For users having difficulty understanding the PDA in voice mode, subtitles are now available. They are displayed on the HUD, and multi-language support is constantly being improved.</p>
+                        </div>
+
+                    </div>
+
                 </section>
+
+                <hr />
+
+                <section id="recently-added">
+                    <h2>Recently Added to Subnautica</h2>
+                    
+                    <div class="row">                        
+                        <div class="col-md-5">
+
+                            <div class="icon-subtitle">
+                                <h3>Water Filtration System</h3>
+                            </div>
+
+                            <p>The filtration system draws water unfit for human consumption from an external source, atomically splits it into its constituent parts and outputs consumable liquid water and salts while disposing of any harmful by-product. It can be built in any compatible habitat module, but has substantial power requirements.</p>
+
+                        </div>
+
+                        <div class="col-md-7 center-div">
+                            <div class="embed-responsive embed-responsive-16by9 youtube trailer">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VHwcORmJJNk"></iframe>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="row">   
+                        <div class="col-md-7 center-div">
+                            <div class="embed-responsive embed-responsive-16by9 youtube trailer">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LJpWHO0SQLY"></iframe>
+                            </div> 
+                        </div>    
+
+                        <div class="col-md-5">
+
+                            <div class="icon-subtitle">
+                                <h3>Aurora Wrecks and Laser Cutter</h3>
+                            </div>
+
+                            <p>The forward section of the Aurora was unlikely to withstand a quantum detonation of the drive core. Expect to encounter huge sections of the ship blasted up to a kilometre from the crash site. Use the new laser cutter tool to break in and find out what lies inside.</p>
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <hr />
+
                 
-                <hr />
 
-                <section id ="blood-kelp">
-                    <h2>New Biome Detected: Blood Kelp</h2>
-                </section>
-
+            </div>  
+            </div>
+            
             </div>
             </div>
+
+            <section id="final" class="homeSlide">
+                    <div class="hsContainer">
+                        <div class="hsContent">
+                            
+                            <div class="mail-list-form" data-bottom-top="opacity: 0;" data-center="opacity: 1" data-anchor-target="#slide-10">
+                                <h3>Get development updates</h3>
+                                <p>Sign up to the Subnautica development mailing list! Receive a newsletter when Subnautica receives an update like this one.</p>
+
+                                 <br />
+
+                                <form action="//subnauti.us6.list-manage.com/subscribe/post?u=bf02bb8619c14d31027c73d97&amp;id=8fa28cd2f4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div class = "form-group text-center">
+                                        <input type="email" value="" name="EMAIL" class="form-control" placeholder = "email address" id="mce-EMAIL">
+                                        <div id="mce-responses" class="clear">
+                                            <div class="response" id="mce-error-response" style="display:none"></div>
+                                            <div class="response" id="mce-success-response" style="display:none"></div>
+                                        </div>
+                                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_bf02bb8619c14d31027c73d97_8fa28cd2f4" tabindex="-1" value=""></div>
+                                        <br />
+                                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default"></div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="footer">
+                                <div class = "row">
+                                    <div class = "col-md-3 text-center">
+                                        <img src = "img/socials/uwe_full_vector.svg" alt = "unknown worlds entertainment" class = "uwe-footer">
+                                    </div>
+                                    <div class = "col-md-6 text-center uwe-footer">
+                                        <p><a href = "http://unknownworlds.com/subnautica/community/" target="_blank">community </a>|
+                                        <a href = "http://status.unknownworlds.com/" target="_blank"> system status </a>|
+                                        <a href = "http://unknownworlds.com/subnautica/community/" target="_blank"> copyright </a>|
+                                        <a href = "http://unknownworlds.com/subnautica/privacy-policy/" target="_blank"> privacy policy </a>|
+                                        <a href = "http://unknownworlds.com/video-policy/" target="_blank"> youtube & twitch monetisation </a>|
+                                        <a href = "http://unknownworlds.com/subnautica/terms-of-use/" target="_blank"> terms of use </a></p>
+                                    </div>
+                                    <div class = "col-md-3 text-center uwe-footer">
+                                        <p>© 2015, <a href = "http://unknownworlds.com" target="_blank">Unknown Worlds Entertainment</a>. All rights reserved.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+            </section>
 		    
 		</main>
 
@@ -199,6 +435,7 @@
         <script src="js/viewports.js"></script>
         <script src="js/lightbox.min.js"></script>
         <script src="js/isInViewport.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
 
         <!-- Turn off videos when out of view -->
         <script type="text/javascript">
